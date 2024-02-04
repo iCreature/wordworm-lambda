@@ -1,0 +1,11 @@
+Resources:
+  YourLambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: wordworm-backend
+      Handler: index.handler
+      Role: arn:aws:iam::564162806256:role/arn:aws:iam::aws:policy/AWSLambda_FullAccess
+      Runtime: nodejs14.x
+      Code:
+        S3Key: wordworm-backend.zip
+      Timeout: 10
