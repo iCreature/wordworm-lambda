@@ -7,5 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mxolisi Msweli",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1555.0",
+    "lodash": "^4.17.21",
+    "mysql": "^2.18.1",
+    "ncc": "^0.3.6"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
