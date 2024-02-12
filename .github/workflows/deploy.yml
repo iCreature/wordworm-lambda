@@ -1,0 +1,21 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+      - staging
+
+jobs:
+  deploy_lambda:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkouts@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node_version: '18.x'
+      - name: npm install
+        run: |
+          npm ci
