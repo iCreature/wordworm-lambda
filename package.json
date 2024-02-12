@@ -9,6 +9,7 @@
   "author": "Mxolisi Msweli",
   "license": "ISC",
   "dependencies": {
+    "@vercel/ncc": "^0.38.1",
     "aws-lambda": "^1.0.7",
     "aws-sdk": "^2.1555.0",
     "lodash": "^4.17.21",

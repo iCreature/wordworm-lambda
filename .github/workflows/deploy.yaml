@@ -21,3 +21,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: deploy
+        run: |
+          npx ncc build src/index.js
+          zip -j deploy.zip ./dist/*
+          aws lambda update-function-code --function-name=wordworm-lambda --zip-file=fileb://deploy.zip
